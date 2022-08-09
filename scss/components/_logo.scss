@@ -1,0 +1,17 @@
+.logo {
+	@extend %reset-link;
+	font-family: var(--secondary-font);
+	font-weight: 700;
+	font-size: 26px;
+}
+.logo__leftpart {
+	color: var(--accent-color);
+}
+.logo__rightpart {
+	margin-left: -7px;
+
+	color: var(--nav-text-color);
+}
+.logo-rightpart--dark-theme {
+	color: var(--main-header-color);
+}

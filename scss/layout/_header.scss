@@ -1,0 +1,20 @@
+.header {
+	position: fixed;
+	top: -1px;
+
+	width: 100%;
+	min-height: 80px;
+
+	border-bottom: 1px solid var(--border-line-color);
+	z-index: 100;
+
+	background-color: #ffffff;
+	&.transparency {
+		background-color: rgba(255, 255, 255, 0.9);
+		backdrop-filter: blur();
+	}
+}
+.header-container {
+	display: flex;
+	align-items: center;
+}

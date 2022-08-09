@@ -1,0 +1,20 @@
+.footer {
+	background-color: var(--footer-bcg-color);
+}
+.footer__wrap {
+	padding-top: 60px;
+	padding-bottom: 60px;
+}
+.footer__container {
+	display: flex;
+	align-items: baseline;
+}
+.footer__address-wrap {
+	margin-right: 70px;
+}
+.footer__socials {
+	margin-right: 93px;
+}
+.footer__logo {
+	margin-bottom: 20px;
+}

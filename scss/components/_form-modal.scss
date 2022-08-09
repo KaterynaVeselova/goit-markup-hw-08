@@ -1,0 +1,257 @@
+/* 				     */
+/*	 form-modal		*/
+/*				    */
+
+/*  Backdrop styles  */
+
+.backdrop {
+	position: fixed;
+	top: 0;
+	left: 0;
+
+	width: 100%;
+	height: 100%;
+
+	z-index: 150;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	background-color: rgba(0, 0, 0, 0.2);
+
+	opacity: 1;
+	/* for additive technologies to read */
+	visibility: visible;
+	pointer-events: initial;
+
+	transition: opacity var(--animation), visibility var(--animation);
+
+	&.is-hidden {
+		opacity: 0;
+		visibility: hidden;
+		pointer-events: none;
+	}
+}
+
+/* 	Modal window	*/
+
+.modal {
+	position: relative;
+	transform: scale(1);
+	z-index: 200;
+
+	width: 530px;
+	border-radius: 4px;
+
+	opacity: 1;
+	transition: transform var(--animation), opacity var(--animation);
+
+	background-color: var(--main-bcg-color);
+
+	.backdrop.is-hidden & {
+		opacity: 0;
+		transform: scale(0.3);
+	}
+}
+.modal__btn-close {
+	width: 30px;
+	height: 30px;
+	padding: 6px;
+	border-radius: 50%;
+
+	position: absolute;
+
+	top: 0;
+	left: 100%;
+	transform: translate(-100%, 0%);
+	cursor: pointer;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	// margin-top: calc(func(transform) + 8px);
+	// margin-left: calc(-1 * (func(transform) + 8px));
+	margin-top: 8px;
+	margin-left: -8px;
+
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	background-color: transparent;
+}
+.modal__btn-icon {
+	fill: #000000;
+	transition: fill var(--animation);
+
+	.modal__btn-close:hover &,
+	.modal__btn-close:focus & {
+		fill: var(--accent-color);
+	}
+}
+
+/*	user form	*/
+
+.form {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	padding: 40px;
+}
+.form__title {
+	display: block;
+	margin-bottom: 12px;
+
+	font-weight: 700;
+	font-size: 20px;
+	line-height: calc(23.44 / 20);
+
+	color: var(--secondary-header-color);
+}
+.form__group {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	width: 100%;
+	margin-bottom: 20px;
+}
+.form__wrap {
+	display: flex;
+	flex-direction: column;
+	gap: 4px;
+
+	width: 100%;
+	position: relative;
+	top: 0;
+	left: 0;
+
+	font-size: 12px;
+	line-height: calc(14 / 12);
+	letter-spacing: 0.01em;
+}
+.form__input {
+	height: 40px;
+	border: 1px solid rgba(33, 33, 33, 0.2);
+	border-radius: 4px;
+
+	padding: 12px 15px;
+	padding-left: 40px;
+
+	transition: border-color var(--animation);
+
+	&:hover,
+	&:focus {
+		cursor: pointer;
+	}
+
+	&:hover,
+	.form__label:focus-within & {
+		border-color: var(--accent-color);
+	}
+
+	&:focus-visible {
+		outline: transparent;
+		border: 1px solid var(--accent-color);
+	}
+}
+.form__icon {
+	position: absolute;
+	top: 0;
+	left: 0;
+
+	margin-left: 12px;
+	margin-top: 28px;
+	pointer-events: none;
+
+	fill: var(--secondary-header-color);
+	transition: fill var(--animation);
+
+	.form__wrap:focus-within &,
+	.form__wrap:hover & {
+		fill: var(--accent-color);
+	}
+}
+.form__textarea {
+	height: 120px;
+	resize: none;
+	border: 1px solid rgba(33, 33, 33, 0.2);
+	border-radius: 4px;
+
+	padding: 12px 15px;
+
+	font-size: 12px;
+	line-height: 1.17;
+	letter-spacing: 0.01em;
+
+	transition: border-color var(--animation);
+
+	&:hover {
+		border-color: var(--accent-color);
+		cursor: pointer;
+	}
+
+	&:focus {
+		cursor: pointer;
+	}
+
+	&::placeholder {
+		font-size: 12px;
+		line-height: 1.17;
+		letter-spacing: 0.01em;
+
+		color: rgba(117, 117, 117, 0.5);
+	}
+
+	&:focus-visible {
+		outline: transparent;
+		border: 1px solid var(--accent-color);
+	}
+}
+.form-agreement {
+	display: flex;
+	align-items: center;
+
+	height: 24px;
+	line-height: calc(24 / 14);
+
+	margin-bottom: 30px;
+}
+.form-agreement__link {
+	user-select: none;
+	color: var(--accent-color);
+	text-underline-position: under;
+
+	&:hover,
+	&:focus {
+		cursor: pointer;
+	}
+}
+.form-agreement__text {
+	margin-left: 8px;
+	user-select: none;
+}
+.form-agreement__unchecked {
+	pointer-events: none;
+
+	fill: #212121;
+	opacity: 1;
+
+	transition: fill var(--animation), opacity var(--animation);
+
+	.form-agreement:hover &,
+	.form-agreement__checkbox:focus + .form-agreement__icon & {
+		fill: var(--accent-color);
+	}
+	.form-agreement__checkbox:checked + .form-agreement__icon & {
+		opacity: 0;
+	}
+}
+.form-agreement__checked {
+	pointer-events: none;
+
+	opacity: 0;
+	transition: opacity var(--animation);
+	.form-agreement__checkbox:checked + .form-agreement__icon & {
+		opacity: 1;
+	}
+}

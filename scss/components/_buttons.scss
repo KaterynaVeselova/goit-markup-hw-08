@@ -1,0 +1,44 @@
+.hero__btn {
+	@extend %btn;
+	min-width: 200px;
+	padding: 10px 32px;
+
+	// background-color: var(--accent-color);
+	transition: background-color var(--animation);
+	&:hover,
+	&:focus {
+		background-color: var(--btn-hover-color);
+	}
+}
+.subscribe__btn {
+	@extend %btn;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+
+	padding: 10px 28px;
+
+	background-color: var(--accent-color);
+	transition: background-color var(--animation);
+	&:hover,
+	&:focus {
+		background-color: var(--btn-hover-color);
+	}
+}
+.subscribe__icon {
+	fill: var(--main-header-color);
+}
+.form__btn {
+	@extend %btn;
+	display: block;
+	width: 200px;
+	padding: 10px 52px;
+
+	transition: background-color var(--animation);
+
+	&:hover,
+	&:focus {
+		background-color: var(--btn-hover-color);
+	}
+}
