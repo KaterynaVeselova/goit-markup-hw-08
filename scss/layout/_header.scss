@@ -1,20 +1,24 @@
 .header {
-	position: fixed;
-	top: -1px;
+	// position: fixed;
+	// top: -1px;
+	// z-index: 100;
 
 	width: 100%;
-	min-height: 80px;
+	height: 60px;
 
 	border-bottom: 1px solid var(--border-line-color);
-	z-index: 100;
 
 	background-color: #ffffff;
 	&.transparency {
 		background-color: rgba(255, 255, 255, 0.9);
 		backdrop-filter: blur();
 	}
+	@media screen and (min-width: 768px) {
+		height: 80px;
+	}
 }
 .header-container {
 	display: flex;
 	align-items: center;
+	height: 100%;
 }

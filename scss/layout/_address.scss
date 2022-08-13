@@ -1,10 +1,20 @@
 .address__list {
 	@extend %reset-list;
+	text-align: center;
+}
+@media screen and (min-width: 1200px) {
+	.address__list {
+		text-align: start;
+	}
 }
 .address__item:not(:last-child) {
-	margin-bottom: 9px;
+	margin-bottom: 8px;
 }
-
+@media screen and (min-width: 1200px) {
+	.address__item:not(:last-child) {
+		margin-bottom: 9px;
+	}
+}
 .address__link {
 	@extend %reset-link;
 
