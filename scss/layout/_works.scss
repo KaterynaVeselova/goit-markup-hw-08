@@ -21,13 +21,9 @@
 		--items: 3;
 		min-width: 370px;
 		@include flex-basis(var(--indent), var(--items));
-		// flex-basis: calc((100% - var(--indent) * (var(--items) - 1)) / var(--items));
 
 		position: relative;
 	}
-	// .works__image {
-	// 	display: block;
-	// }
 	.works__description {
 		position: absolute;
 		left: 0;
