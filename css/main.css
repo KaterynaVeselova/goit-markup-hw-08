@@ -81,6 +81,16 @@ p {
   margin: 0;
 }
 
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
 body {
   color: var(--main-text-color);
   background-color: var(--main-bcg-color);
@@ -247,10 +257,6 @@ body {
 .project__link:hover, .project__link:focus {
   -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
           box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-}
-
-.project__image {
-  display: block;
 }
 
 .project__content {
@@ -913,7 +919,11 @@ body {
   }
 }
 
-.burger-menu:hover .burger-menu__icon, .burger-menu:foocus .burger-menu__icon {
+.burger-menu .burger-menu__icon {
+  -webkit-transition: fill var(--animation);
+  transition: fill var(--animation);
+}
+.burger-menu:hover .burger-menu__icon, .burger-menu:focus .burger-menu__icon {
   fill: var(--accent-color);
 }
 
@@ -925,15 +935,13 @@ body {
           transform: translate(-50% -50%);
   margin-top: 10px;
   margin-right: 15px;
-  fill: var(--accent-color);
 }
-.menu-close:hover .menu-close__icon, .menu-close:foocus menu-close__icon {
-  fill: var(--accent-color);
+.menu-close .menu-close__icon {
+  -webkit-transition: fill var(--animation);
+  transition: fill var(--animation);
 }
-
-.burger-menu__icon,
-.menu-close__icon {
-  fill: var(--secondary-header-color);
+.menu-close:hover .menu-close__icon, .menu-close:focus .menu-close__icon {
+  fill: var(--accent-color);
 }
 
 .menu-backdrop {
@@ -964,6 +972,16 @@ body {
   padding-top: 48px;
   padding-left: 40px;
   padding-bottom: 48px;
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+  -webkit-transition: -webkit-transform var(--animation);
+  transition: -webkit-transform var(--animation);
+  transition: transform var(--animation);
+  transition: transform var(--animation), -webkit-transform var(--animation);
+}
+.menu-backdrop.is-open .menu-container {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
 }
 
 @media screen and (max-width: 767px) {
@@ -1370,9 +1388,6 @@ body {
         flex-basis: calc((100% - var(--indent) * (var(--items) - 1)) / var(--items));
     position: relative;
   }
-  .works__image {
-    display: block;
-  }
   .works__description {
     position: absolute;
     left: 0;
@@ -1432,10 +1447,6 @@ body {
     --items: 4;
     max-width: 270px;
   }
-}
-
-.team__image {
-  display: block;
 }
 
 .team__textpart {
