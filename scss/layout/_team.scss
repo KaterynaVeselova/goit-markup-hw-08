@@ -31,7 +31,11 @@
 // 	display: block;
 // }
 .team__textpart {
-	padding: 30px 10px;
+	padding-top: 30px;
+	padding-bottom: 24px;
+	@media screen and (min-width: 1200px) {
+		padding-bottom: 30px;
+	}
 }
 .team__header {
 	margin-bottom: 10px;

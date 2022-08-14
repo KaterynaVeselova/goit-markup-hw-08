@@ -29,6 +29,7 @@
 						<use href="./images/icons.svg#burger-menu"></use>
 					</svg>
 				</button>
+				<!-- mobile navigation -->
 				<div class="menu-backdrop" data-menu>
 					<div class="menu-container">
 						<button class="menu-close" type="button" data-menu-close>
@@ -43,7 +44,7 @@
 							<li class="nav__item">
 								<a class="nav__link nav__link--current" href="./portfolio.html">Портфоліо</a>
 							</li>
-							<li class="nav__item"><a class="nav__link" href="#contacts">Контакти</a></li>
+							<li class="nav__item"><a class="nav__link" href="./index.html#contacts">Контакти</a></li>
 						</ul>
 						<ul class="header-contacts__list">
 							<li class="header-contacts__item">
@@ -110,7 +111,49 @@
 						<li class="project__item">
 							<a class="project__link link" href="">
 								<div class="project__backdrop">
-									<img class="project__image" src="./images/img11.jpg" alt="Веб-сайт - Технокряк" width="370" />
+									<picture>
+										<!-- for desktop -->
+										<source
+											media="(min-width: 1200px)"
+											srcset="./images/portfolio/img-1@1x_lg.webp 1x, ./images/portfolio/img-1@2x_lg.webp 2x"
+											type="image/webp"
+										/>
+										<source
+											media="(min-width: 1200px)"
+											srcset="./images/portfolio/img-1@1x_lg.jpg 1x, ./images/portfolio/img-1@2x_lg.jpg 2x"
+											type="image/jpg"
+										/>
+										<!-- for tablet -->
+										<source
+											media="(min-width: 768px)"
+											srcset="./images/portfolio/img-1@1x_md.webp 1x, ./images/portfolio/img-1@2x_md.webp 2x"
+											type="image/webp"
+										/>
+										<source
+											media="(min-width: 768px)"
+											srcset="./images/portfolio/img-1@1x_md.jpg 1x, ./images/portfolio/img-1@2x_md.jpg 2x"
+											type="image/jpg"
+										/>
+										<!-- for mobile -->
+										<source
+											media="(max-width: 767px)"
+											srcset="./images/portfolio/img-1@1x_sm.webp 1x, ./images/portfolio/img-1@2x_sm.webp 2x"
+											type="image/webp"
+										/>
+										<source
+											media="(max-width: 767px)"
+											srcset="./images/portfolio/img-1@1x_sm.jpg 1x, ./images/portfolio/img-1@2x_sm.jpg 2x"
+											type="image/jpg"
+										/>
+										<img
+											class="project__image"
+											src="./images/portfolio/img-1@1x_sm.jpg"
+											alt="Веб-сайт - Технокряк"
+											width="450"
+											height="294"
+										/>
+									</picture>
+
 									<p class="project__backdrop-text">
 										Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить
 										відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
@@ -126,12 +169,48 @@
 						<li class="project__item">
 							<a class="project__link" href="">
 								<div class="project__backdrop">
-									<img
-										class="project__image"
-										src="./images/img12.jpg"
-										alt="Дизайн - Постер New Orlean vs Golden Star"
-										width="370"
-									/>
+									<picture>
+										<!-- for desktop -->
+										<source
+											media="(min-width: 1200px)"
+											srcset="./images/portfolio/img-2@1x_lg.webp 1x, ./images/portfolio/img-2@2x_lg.webp 2x"
+											type="image/webp"
+										/>
+										<source
+											media="(min-width: 1200px)"
+											srcset="./images/portfolio/img-2@1x_lg.jpg 1x, ./images/portfolio/img-2@2x_lg.jpg 2x"
+											type="image/jpg"
+										/>
+										<!-- for tablet -->
+										<source
+											media="(min-width: 768px)"
+											srcset="./images/portfolio/img-2@1x_md.webp 1x, ./images/portfolio/img-2@2x_md.webp 2x"
+											type="image/webp"
+										/>
+										<source
+											media="(min-width: 768px)"
+											srcset="./images/portfolio/img-2@1x_md.jpg 1x, ./images/portfolio/img-2@2x_md.jpg 2x"
+											type="image/jpg"
+										/>
+										<!-- for mobile -->
+										<source
+											media="(max-width: 767px)"
+											srcset="./images/portfolio/img-2@1x_sm.webp 1x, ./images/portfolio/img-2@2x_sm.webp 2x"
+											type="image/webp"
+										/>
+										<source
+											media="(max-width: 767px)"
+											srcset="./images/portfolio/img-2@1x_sm.jpg 1x, ./images/portfolio/img-2@2x_sm.jpg 2x"
+											type="image/jpg"
+										/>
+										<img
+											class="project__image"
+											src="./images/portfolio/img-2@1x_sm.jpg"
+											alt="Дизайн - Постер New Orlean vs Golden Star"
+											width="450"
+											height="294"
+										/>
+									</picture>
 									<p class="project__backdrop-text">
 										Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить
 										відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
@@ -147,12 +226,48 @@
 						<li class="project__item">
 							<a class="project__link" href="">
 								<div class="project__backdrop">
-									<img
-										class="project__image"
-										src="./images/img13.jpg"
-										alt="Приложение - Ресторан Seafood"
-										width="370"
-									/>
+									<picture>
+										<!-- for desktop -->
+										<source
+											media="(min-width: 1200px)"
+											srcset="./images/portfolio/img-3@1x_lg.webp 1x, ./images/portfolio/img-3@2x_lg.webp 2x"
+											type="image/webp"
+										/>
+										<source
+											media="(min-width: 1200px)"
+											srcset="./images/portfolio/img-3@1x_lg.jpg 1x, ./images/portfolio/img-3@2x_lg.jpg 2x"
+											type="image/jpg"
+										/>
+										<!-- for tablet -->
+										<source
+											media="(min-width: 768px)"
+											srcset="./images/portfolio/img-3@1x_md.webp 1x, ./images/portfolio/img-3@2x_md.webp 2x"
+											type="image/webp"
+										/>
+										<source
+											media="(min-width: 768px)"
+											srcset="./images/portfolio/img-3@1x_md.jpg 1x, ./images/portfolio/img-3@2x_md.jpg 2x"
+											type="image/jpg"
+										/>
+										<!-- for mobile -->
+										<source
+											media="(max-width: 767px)"
+											srcset="./images/portfolio/img-3@1x_sm.webp 1x, ./images/portfolio/img-3@2x_sm.webp 2x"
+											type="image/webp"
+										/>
+										<source
+											media="(max-width: 767px)"
+											srcset="./images/portfolio/img-3@1x_sm.jpg 1x, ./images/portfolio/img-3@2x_sm.jpg 2x"
+											type="image/jpg"
+										/>
+										<img
+											class="project__image"
+											src="./images/portfolio/img-3@1x_sm.jpg"
+											alt="Приложение - Ресторан Seafood"
+											width="450"
+											height="294"
+										/>
+									</picture>
 									<p class="project__backdrop-text">
 										Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить
 										відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
@@ -168,7 +283,48 @@
 						<li class="project__item">
 							<a class="project__link" href="">
 								<div class="project__backdrop">
-									<img class="project__image" src="./images/img21.jpg" alt="Маркетинг - Проект Prime" width="370" />
+									<picture>
+										<!-- for desktop -->
+										<source
+											media="(min-width: 1200px)"
+											srcset="./images/portfolio/img-4@1x_lg.webp 1x, ./images/portfolio/img-4@2x_lg.webp 2x"
+											type="image/webp"
+										/>
+										<source
+											media="(min-width: 1200px)"
+											srcset="./images/portfolio/img-4@1x_lg.jpg 1x, ./images/portfolio/img-4@2x_lg.jpg 2x"
+											type="image/jpg"
+										/>
+										<!-- for tablet -->
+										<source
+											media="(min-width: 768px)"
+											srcset="./images/portfolio/img-4@1x_md.webp 1x, ./images/portfolio/img-4@2x_md.webp 2x"
+											type="image/webp"
+										/>
+										<source
+											media="(min-width: 768px)"
+											srcset="./images/portfolio/img-4@1x_md.jpg 1x, ./images/portfolio/img-4@2x_md.jpg 2x"
+											type="image/jpg"
+										/>
+										<!-- for mobile -->
+										<source
+											media="(max-width: 767px)"
+											srcset="./images/portfolio/img-4@1x_sm.webp 1x, ./images/portfolio/img-4@2x_sm.webp 2x"
+											type="image/webp"
+										/>
+										<source
+											media="(max-width: 767px)"
+											srcset="./images/portfolio/img-4@1x_sm.jpg 1x, ./images/portfolio/img-4@2x_sm.jpg 2x"
+											type="image/jpg"
+										/>
+										<img
+											class="project__image"
+											src="./images/portfolio/img-4@1x_sm.jpg"
+											alt="Маркетинг - Проект Prime"
+											width="450"
+											height="294"
+										/>
+									</picture>
 									<p class="project__backdrop-text">
 										Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить
 										відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
@@ -184,7 +340,48 @@
 						<li class="project__item">
 							<a class="project__link" href="">
 								<div class="project__backdrop">
-									<img class="project__image" src="./images/img22.jpg" alt="Приложение - Проект Boxes" width="370" />
+									<picture>
+										<!-- for desktop -->
+										<source
+											media="(min-width: 1200px)"
+											srcset="./images/portfolio/img-5@1x_lg.webp 1x, ./images/portfolio/img-5@2x_lg.webp 2x"
+											type="image/webp"
+										/>
+										<source
+											media="(min-width: 1200px)"
+											srcset="./images/portfolio/img-5@1x_lg.jpg 1x, ./images/portfolio/img-5@2x_lg.jpg 2x"
+											type="image/jpg"
+										/>
+										<!-- for tablet -->
+										<source
+											media="(min-width: 768px)"
+											srcset="./images/portfolio/img-5@1x_md.webp 1x, ./images/portfolio/img-5@2x_md.webp 2x"
+											type="image/webp"
+										/>
+										<source
+											media="(min-width: 768px)"
+											srcset="./images/portfolio/img-5@1x_md.jpg 1x, ./images/portfolio/img-5@2x_md.jpg 2x"
+											type="image/jpg"
+										/>
+										<!-- for mobile -->
+										<source
+											media="(max-width: 767px)"
+											srcset="./images/portfolio/img-5@1x_sm.webp 1x, ./images/portfolio/img-5@2x_sm.webp 2x"
+											type="image/webp"
+										/>
+										<source
+											media="(max-width: 767px)"
+											srcset="./images/portfolio/img-5@1x_sm.jpg 1x, ./images/portfolio/img-5@2x_sm.jpg 2x"
+											type="image/jpg"
+										/>
+										<img
+											class="project__image"
+											src="./images/portfolio/img-5@1x_sm.jpg"
+											alt="Приложение - Проект Boxes"
+											width="450"
+											height="294"
+										/>
+									</picture>
 									<p class="project__backdrop-text">
 										Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить
 										відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
@@ -200,12 +397,48 @@
 						<li class="project__item">
 							<a class="project__link" href="">
 								<div class="project__backdrop">
-									<img
-										class="project__image"
-										src="./images/img23.jpg"
-										alt="Веб-сайт - Inspiration has no Borders"
-										width="370"
-									/>
+									<picture>
+										<!-- for desktop -->
+										<source
+											media="(min-width: 1200px)"
+											srcset="./images/portfolio/img-6@1x_lg.webp 1x, ./images/portfolio/img-6@2x_lg.webp 2x"
+											type="image/webp"
+										/>
+										<source
+											media="(min-width: 1200px)"
+											srcset="./images/portfolio/img-6@1x_lg.jpg 1x, ./images/portfolio/img-6@2x_lg.jpg 2x"
+											type="image/jpg"
+										/>
+										<!-- for tablet -->
+										<source
+											media="(min-width: 768px)"
+											srcset="./images/portfolio/img-6@1x_md.webp 1x, ./images/portfolio/img-6@2x_md.webp 2x"
+											type="image/webp"
+										/>
+										<source
+											media="(min-width: 768px)"
+											srcset="./images/portfolio/img-6@1x_md.jpg 1x, ./images/portfolio/img-6@2x_md.jpg 2x"
+											type="image/jpg"
+										/>
+										<!-- for mobile -->
+										<source
+											media="(max-width: 767px)"
+											srcset="./images/portfolio/img-6@1x_sm.webp 1x, ./images/portfolio/img-6@2x_sm.webp 2x"
+											type="image/webp"
+										/>
+										<source
+											media="(max-width: 767px)"
+											srcset="./images/portfolio/img-6@1x_sm.jpg 1x, ./images/portfolio/img-6@2x_sm.jpg 2x"
+											type="image/jpg"
+										/>
+										<img
+											class="project__image"
+											src="./images/portfolio/img-6@1x_sm.jpg"
+											alt="Веб-сайт - Inspiration has no Borders"
+											width="450"
+											height="294"
+										/>
+									</picture>
 									<p class="project__backdrop-text">
 										Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить
 										відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
@@ -221,12 +454,48 @@
 						<li class="project__item">
 							<a class="project__link" href="">
 								<div class="project__backdrop">
-									<img
-										class="project__image"
-										src="./images/img31.jpg"
-										alt="Дизайн - Издание Limited Edition"
-										width="370"
-									/>
+									<picture>
+										<!-- for desktop -->
+										<source
+											media="(min-width: 1200px)"
+											srcset="./images/portfolio/img-7@1x_lg.webp 1x, ./images/portfolio/img-7@2x_lg.webp 2x"
+											type="image/webp"
+										/>
+										<source
+											media="(min-width: 1200px)"
+											srcset="./images/portfolio/img-7@1x_lg.jpg 1x, ./images/portfolio/img-7@2x_lg.jpg 2x"
+											type="image/jpg"
+										/>
+										<!-- for tablet -->
+										<source
+											media="(min-width: 768px)"
+											srcset="./images/portfolio/img-7@1x_md.webp 1x, ./images/portfolio/img-7@2x_md.webp 2x"
+											type="image/webp"
+										/>
+										<source
+											media="(min-width: 768px)"
+											srcset="./images/portfolio/img-7@1x_md.jpg 1x, ./images/portfolio/img-7@2x_md.jpg 2x"
+											type="image/jpg"
+										/>
+										<!-- for mobile -->
+										<source
+											media="(max-width: 767px)"
+											srcset="./images/portfolio/img-7@1x_sm.webp 1x, ./images/portfolio/img-7@2x_sm.webp 2x"
+											type="image/webp"
+										/>
+										<source
+											media="(max-width: 767px)"
+											srcset="./images/portfolio/img-7@1x_sm.jpg 1x, ./images/portfolio/img-7@2x_sm.jpg 2x"
+											type="image/jpg"
+										/>
+										<img
+											class="project__image"
+											src="./images/portfolio/img-7@1x_sm.jpg"
+											alt="Дизайн - Издание Limited Edition"
+											width="450"
+											height="294"
+										/>
+									</picture>
 									<p class="project__backdrop-text">
 										Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить
 										відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
@@ -242,7 +511,48 @@
 						<li class="project__item">
 							<a class="project__link" href="">
 								<div class="project__backdrop">
-									<img class="project__image" src="./images/img32.jpg" alt="Маркетинг - Проект LAB" width="370" />
+									<picture>
+										<!-- for desktop -->
+										<source
+											media="(min-width: 1200px)"
+											srcset="./images/portfolio/img-8@1x_lg.webp 1x, ./images/portfolio/img-8@2x_lg.webp 2x"
+											type="image/webp"
+										/>
+										<source
+											media="(min-width: 1200px)"
+											srcset="./images/portfolio/img-8@1x_lg.jpg 1x, ./images/portfolio/img-8@2x_lg.jpg 2x"
+											type="image/jpg"
+										/>
+										<!-- for tablet -->
+										<source
+											media="(min-width: 768px)"
+											srcset="./images/portfolio/img-8@1x_md.webp 1x, ./images/portfolio/img-8@2x_md.webp 2x"
+											type="image/webp"
+										/>
+										<source
+											media="(min-width: 768px)"
+											srcset="./images/portfolio/img-8@1x_md.jpg 1x, ./images/portfolio/img-8@2x_md.jpg 2x"
+											type="image/jpg"
+										/>
+										<!-- for mobile -->
+										<source
+											media="(max-width: 767px)"
+											srcset="./images/portfolio/img-8@1x_sm.webp 1x, ./images/portfolio/img-8@2x_sm.webp 2x"
+											type="image/webp"
+										/>
+										<source
+											media="(max-width: 767px)"
+											srcset="./images/portfolio/img-8@1x_sm.jpg 1x, ./images/portfolio/img-8@2x_sm.jpg 2x"
+											type="image/jpg"
+										/>
+										<img
+											class="project__image"
+											src="./images/portfolio/img-8@1x_sm.jpg"
+											alt="Маркетинг - Проект LAB"
+											width="450"
+											height="294"
+										/>
+									</picture>
 									<p class="project__backdrop-text">
 										Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить
 										відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
@@ -258,12 +568,48 @@
 						<li class="project__item">
 							<a class="project__link" href="">
 								<div class="project__backdrop">
-									<img
-										class="project__image"
-										src="./images/img33.jpg"
-										alt="Приложение - Growing Business"
-										width="370"
-									/>
+									<picture>
+										<!-- for desktop -->
+										<source
+											media="(min-width: 1200px)"
+											srcset="./images/portfolio/img-9@1x_lg.webp 1x, ./images/portfolio/img-9@2x_lg.webp 2x"
+											type="image/webp"
+										/>
+										<source
+											media="(min-width: 1200px)"
+											srcset="./images/portfolio/img-9@1x_lg.jpg 1x, ./images/portfolio/img-9@2x_lg.jpg 2x"
+											type="image/jpg"
+										/>
+										<!-- for tablet -->
+										<source
+											media="(min-width: 768px)"
+											srcset="./images/portfolio/img-9@1x_md.webp 1x, ./images/portfolio/img-9@2x_md.webp 2x"
+											type="image/webp"
+										/>
+										<source
+											media="(min-width: 768px)"
+											srcset="./images/portfolio/img-9@1x_md.jpg 1x, ./images/portfolio/img-9@2x_md.jpg 2x"
+											type="image/jpg"
+										/>
+										<!-- for mobile -->
+										<source
+											media="(max-width: 767px)"
+											srcset="./images/portfolio/img-9@1x_sm.webp 1x, ./images/portfolio/img-9@2x_sm.webp 2x"
+											type="image/webp"
+										/>
+										<source
+											media="(max-width: 767px)"
+											srcset="./images/portfolio/img-9@1x_sm.jpg 1x, ./images/portfolio/img-9@2x_sm.jpg 2x"
+											type="image/jpg"
+										/>
+										<img
+											class="project__image"
+											src="./images/portfolio/img-9@1x_sm.jpg"
+											alt="Приложение - Growing Business"
+											width="450"
+											height="294"
+										/>
+									</picture>
 									<p class="project__backdrop-text">
 										Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить
 										відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
