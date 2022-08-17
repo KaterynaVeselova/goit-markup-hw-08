@@ -1,7 +1,7 @@
 .clients {
-	@include section(60px, 60px, var(--secondary-bcg-color));
+	@include section(60px, 60px, var(--main-bcg-color));
 	@media screen and (min-width: 1200px) {
-		@include section(94px, 94px, var(--secondary-bcg-color));
+		@include section(94px, 94px, var(--main-bcg-color));
 	}
 }
 

@@ -31,14 +31,14 @@
 	color: var(--main-text-color);
 
 	font-weight: 500;
-	font-size: 12px;
+
 	line-height: calc(14 / 12);
 	letter-spacing: 0.02em;
 	transition: color var(--animation);
 	.header-contacts__item:first-child & {
 		@media screen and (max-width: 767px) {
 			font-size: 34px;
-			line-height: calc(39 / 34);
+			line-height: calc(40 / 34);
 			color: var(--accent-color);
 		}
 	}
@@ -46,7 +46,6 @@
 		@media screen and (max-width: 767px) {
 			font-size: 24px;
 			line-height: calc(28 / 24);
-			// color: var(--accent-color);
 		}
 	}
 	&:hover,
@@ -71,6 +70,7 @@
 		gap: 10px;
 		padding-top: 32px;
 		padding-bottom: 32px;
+
 		font-size: 14px;
 		line-height: calc(16 / 14);
 	}

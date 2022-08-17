@@ -58,6 +58,7 @@
 .mobile-socials__list {
 	@extend %reset-list;
 	display: flex;
+	flex-wrap: wrap;
 	margin-top: 64px;
 }
 .mobile-socials__item:not(:last-child) {
