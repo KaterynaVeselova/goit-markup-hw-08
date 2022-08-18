@@ -46,6 +46,7 @@
 	z-index: 100;
 	width: 100%;
 	height: 100%;
+	overflow-y: scroll;
 
 	opacity: 0;
 	pointer-events: none;
@@ -72,6 +73,9 @@
 	transition: transform var(--animation);
 	.menu-backdrop.is-open & {
 		transform: translateX(0);
+	}
+	@media screen and (max-width: 479px) {
+		height: 796px;
 	}
 }
 
