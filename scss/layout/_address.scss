@@ -1,17 +1,13 @@
 .address__list {
 	@extend %reset-list;
 	text-align: center;
-}
-@media screen and (min-width: 1200px) {
-	.address__list {
+	@media screen and (min-width: 1200px) {
 		text-align: start;
 	}
 }
 .address__item:not(:last-child) {
 	margin-bottom: 8px;
-}
-@media screen and (min-width: 1200px) {
-	.address__item:not(:last-child) {
+	@media screen and (min-width: 1200px) {
 		margin-bottom: 9px;
 	}
 }
@@ -29,7 +25,11 @@
 	&:focus {
 		color: var(--main-header-color);
 	}
+
 	.address__item:first-child & {
 		color: var(--main-header-color);
+		@media screen and (max-width: 479px) {
+			font-size: 27px;
+		}
 	}
 }
