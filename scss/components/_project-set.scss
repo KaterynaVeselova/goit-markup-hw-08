@@ -110,6 +110,10 @@
 		opacity: 1;
 		transform: translate(-50%, -50%);
 	}
+	@media screen and (max-width: 479px) {
+		font-size: 16px;
+		padding: 0 15px;
+	}
 	@media screen and (min-width: 480px) {
 		padding: 77px 24px;
 	}

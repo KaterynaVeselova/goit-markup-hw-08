@@ -341,6 +341,12 @@ body {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
 }
+@media screen and (max-width: 479px) {
+  .project__backdrop-text {
+    font-size: 16px;
+    padding: 0 15px;
+  }
+}
 @media screen and (min-width: 480px) {
   .project__backdrop-text {
     padding: 77px 24px;
