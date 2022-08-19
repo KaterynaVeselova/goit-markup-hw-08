@@ -45,11 +45,10 @@
 	left: 50%;
 	transform: translateX(-50%);
 
-	width: 100%;
-	width: 450px;
+	// width: 100%;
+	// width: 450px;
+	// //height: 609px;
 
-	height: 609px;
-	// padding: 40px;
 	overflow-y: scroll;
 
 	border-radius: 4px;
@@ -63,7 +62,7 @@
 		opacity: 0;
 		transform: scale(0.3);
 	}
-	@media screen and (max-width: 480px) {
+	@media screen and (max-width: 479px) {
 		width: 100%;
 	}
 	@media screen and (min-width: 480px) {
@@ -79,27 +78,30 @@
 .modal__btn-close {
 	position: absolute;
 
-	width: 30px;
-	height: 30px;
-	padding: 6px;
-	border-radius: 50%;
-
 	top: 0;
 	left: 100%;
-	transform: translate(-100%, 0%);
-	cursor: pointer;
 
 	display: flex;
 	align-items: center;
 	justify-content: center;
 
-	// margin-top: calc(func(transform) + 8px);
-	// margin-left: calc(-1 * (func(transform) + 8px));
+	width: 30px;
+	height: 30px;
+
+	border-radius: 50%;
+
+	padding: 6px;
 	margin-top: 8px;
 	margin-left: -8px;
 
 	border: 1px solid rgba(0, 0, 0, 0.1);
 	background-color: transparent;
+
+	transform: translate(-100%, 0%);
+	cursor: pointer;
+
+	// margin-top: calc(func(transform) + 8px);
+	// margin-left: calc(-1 * (func(transform) + 8px));
 }
 .modal__btn-icon {
 	fill: #000000;
@@ -182,7 +184,8 @@
 	}
 
 	&:focus-visible {
-		outline: transparent;
+		// outline: transparent;
+		outline: none;
 		border: 1px solid var(--accent-color);
 	}
 }
@@ -235,8 +238,13 @@
 	}
 
 	&:focus-visible {
-		outline: transparent;
+		// outline: transparent;
+		outline: none;
 		border: 1px solid var(--accent-color);
+	}
+
+	@media screen and (max-width: 479px) {
+		height: 79px;
 	}
 }
 .form-agreement {
@@ -247,7 +255,9 @@
 	height: 15px;
 
 	@media screen and (min-width: 1200px) {
-		height: 24px;
+		// height: 24px;
+		padding-top: 6px;
+		padding-bottom: 6px;
 	}
 }
 

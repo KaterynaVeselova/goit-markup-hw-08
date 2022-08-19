@@ -29,7 +29,7 @@
 	.address__item:first-child & {
 		color: var(--main-header-color);
 		@media screen and (max-width: 479px) {
-			font-size: 27px;
+			font-size: 14px;
 		}
 	}
 }

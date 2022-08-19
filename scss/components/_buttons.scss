@@ -39,6 +39,8 @@
 	@extend %btn;
 	display: block;
 	width: 200px;
+	// margin-left: auto;
+	// margin-right: auto;
 	padding: 10px 52px;
 
 	transition: background-color var(--animation);
