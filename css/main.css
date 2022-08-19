@@ -807,6 +807,7 @@ body {
 @media screen and (min-width: 1200px) {
   .form-agreement__link {
     height: 24px;
+    font-size: 14px;
     line-height: 1.7142857143;
   }
 }
@@ -824,6 +825,7 @@ body {
 @media screen and (min-width: 1200px) {
   .form-agreement__text {
     height: 24px;
+    font-size: 14px;
     line-height: 1.7142857143;
   }
 }
