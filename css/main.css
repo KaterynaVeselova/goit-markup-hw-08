@@ -1053,11 +1053,6 @@ body {
   -webkit-transform: translateX(0);
           transform: translateX(0);
 }
-@media screen and (max-width: 479px) {
-  .menu-container {
-    height: 796px;
-  }
-}
 
 @media screen and (max-width: 767px) {
   .menu-container {

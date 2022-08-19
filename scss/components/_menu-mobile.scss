@@ -74,9 +74,9 @@
 	.menu-backdrop.is-open & {
 		transform: translateX(0);
 	}
-	@media screen and (max-width: 479px) {
-		height: 796px;
-	}
+	// @media screen and (max-width: 479px) {
+	// 	height: 796px;
+	// }
 }
 
 @media screen and (max-width: 767px) {
